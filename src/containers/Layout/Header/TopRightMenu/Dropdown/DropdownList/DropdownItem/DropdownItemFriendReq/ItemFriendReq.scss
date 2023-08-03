@@ -1,0 +1,89 @@
+.item-friend-request {
+    width: 100%;
+    transition: all 0.4s ease;
+    padding: 0px 10px;
+    .sub-card {
+        font-size: inherit;
+        padding: 0px 10px;
+        color: inherit;
+        border-bottom: 1px solid var(--border-light);
+        display: inline-block;
+        .info-user {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img-avatar {
+                .avatar-40 {
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    font-size: 0.6rem;
+                }
+            }
+            .content-req {
+                line-height: 20px;
+                text-overflow: ellipsis;
+                display: flex;
+                justify-content: space-between;
+                .req {
+                    flex-grow: 7;
+                }
+                .btn-request {
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    button {
+                        position: relative;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 5px;
+                        border: 0px;
+                        i {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                        }
+                    }
+                    .btn-confirm {
+                        background-color: rgba(#2f65b9, 0.1);
+                        transition: all 0.4s ease;
+                        i {
+                            color: var(--primary);
+                        }
+                        &:hover {
+                            background-color: var(--primary);
+                            transition: all 0.4 ease;
+                            i {
+                                color: white;
+                            }
+                        }
+                    }
+                    .btn-remove {
+                        background-color: rgba(#d63031, 0.1);
+                        transition: all 0.4s ease;
+                        i {
+                            color: var(--remove);
+                        }
+                        &:hover {
+                            background-color: var(--remove);
+                            transition: all 0.4 ease;
+                            i {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sub-card-big {
+        width: auto;
+    }
+    &:hover {
+        background-color: rgba(#f1f1f1, 0.5);
+        cursor: pointer;
+    }
+}

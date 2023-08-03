@@ -1,0 +1,39 @@
+.item-suggestion {
+    .info-user {
+        width: 100%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-user {
+            img {
+                transition: all 0.1s ease;
+                width: 3.9rem;
+                height: 3.9rem;
+                border-radius: 50%;
+            }
+        }
+        .user-name {
+            text-align: center;
+            margin: auto;
+            overflow: hidden;
+            //width: 20%;
+            p{
+                transition: all 0.1s ease;
+                font-size: 0.9rem;
+            }
+        }
+        &:hover{
+            img{
+                width: 4rem;
+                height: 4rem;
+            }
+            p{
+                font-size: 0.92rem;
+                color: var(--primary);
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.card-footer {
+    .interactions {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        .likes,
+        .comments {
+            display: flex;
+            align-items: center;
+            padding: 0px 15px;
+            cursor: pointer;
+            img {
+                width: 1.65rem;
+                height: 1.65rem;
+            }
+            p {
+                margin-left: 5px;
+                font-weight: 500;
+            }
+        }
+        .comments.active{
+            background-color: var(--border-light);
+            height: 40px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+    }
+}

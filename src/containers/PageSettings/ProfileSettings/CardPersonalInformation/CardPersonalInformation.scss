@@ -1,0 +1,50 @@
+.card-personal-information {
+    .body {
+        margin-top: 30px;
+        form {
+            .group-input {
+                margin-bottom: 25px;
+                textarea.form-control {
+                    font-size: 0.9rem;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    resize: none;
+                    color: var(--title-text);
+                    &:focus {
+                        border: 1px solid var(--primary);
+                        color: var(--title-text);
+                    }
+                }
+                .form-control-plaintext {
+                    color: red;
+                }
+                select.form-select {
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    color: var(--title-text);
+                    &:focus {
+                        border: 1px solid var(--primary);
+                        box-shadow: none;
+                        color: var(--title-text);
+                    }
+                }
+                label {
+                }
+                span.err-msg {
+                    padding: 10px 5px;
+                    color: var(--remove);
+                    font-weight: 500;
+                }
+            }
+            .footer {
+                button {
+                    border: 0px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

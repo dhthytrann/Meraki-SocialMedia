@@ -1,0 +1,57 @@
+.card-e-commerce-advertising {
+    .list-product {
+        margin-top: 10px;
+        padding: 0px 5px;
+        .item-product {
+            padding: 15px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            .img-product {
+                width: 36%;
+                padding: 0px 5px 0px 0px;
+                transition: all 0.3s ease;
+                img {
+                    transition: all 0.3s ease;
+                    width: 90%;
+                    object-fit: cover;
+                    height: 6.43rem;
+                    border-radius: 10px;
+                }
+            }
+            .content {
+                width: 63%;
+                text-align: start;
+                //margin-left: 20px;
+                .product-name {
+                    h6 {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-weight: 500;
+                        font-size: 1.07rem;
+                        transition: all 0.3s ease;
+                    }
+                }
+                .product-link {
+                    p {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+            &:hover {
+                img {
+                    filter: grayscale(50%);
+                }
+                h6,
+                p {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}

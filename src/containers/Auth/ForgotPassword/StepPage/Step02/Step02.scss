@@ -1,0 +1,12 @@
+@import "../../../../../assets/scss/media";
+
+.step-content-02 {
+    //width: 100%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    >.form-verify {
+       width: 100%;
+    }
+}

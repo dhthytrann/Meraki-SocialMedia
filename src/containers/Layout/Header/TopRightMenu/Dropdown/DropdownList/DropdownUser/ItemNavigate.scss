@@ -1,0 +1,33 @@
+.item-navigate {
+    width: 100%;
+    transition: all 0.4s ease;
+    padding: 0px 15px;
+    .sub-card {
+        font-size: inherit;
+        padding: 0px 10px;
+        color: inherit;
+        border-bottom: 1px solid var(--border-light);
+        display: inline-block;
+        .info-user {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .ic-navigate{
+                img{
+
+                }
+            }
+            .content-navigate {
+                line-height: 20px;
+            }
+        }
+    }
+    .sub-card-big {
+        width: auto;
+    }
+    &:hover {
+        background-color: rgba(#f1f1f1, 0.5);
+        cursor: pointer;
+    }
+}

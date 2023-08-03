@@ -1,0 +1,31 @@
+@import "../../../assets//scss/media";
+
+.card-body {
+    .status {
+        p {
+            font-size: 1.02rem;
+        }
+    }
+    .images {
+        width: 100%;
+        //height: 480px;
+        height: 200px;
+        //overflow: hidden;
+        object-fit: cover;
+        @include sm {
+            height: 280px;
+        }
+        @include md {
+            height: 350px;
+        }
+        @include lg {
+            height: 470px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@import "../../../../../assets//scss//media";
+
+#friends-tab-pane {
+    background: var(--white);
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem 1rem 2rem;
+        //border-bottom: 1px solid var(--border-light);
+        h4 {
+            font-weight: 500;
+        }
+        a {
+            text-decoration: none;
+            color: none;
+        }
+    }
+    .friend-list {
+        display: grid;
+        grid-template-columns: auto;
+        @include lg {
+            // display: flex;
+            // align-items: center;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .item-friend {
+            //width: 100%;
+            // @include lg {
+            //    //width: 50%;
+            // }
+            height: 110px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.2s ease;
+            .info-user {
+                display: flex;
+                align-items: center;
+                .img-user {
+                    width: 65px;
+                    height: 65px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        //height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+                .content {
+                    margin-left: 15px;
+                    p.username {
+                        font-weight: 500;
+                        color: var(--title-text);
+                        font-size: 1.1rem;
+                    }
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+            .btn-unfriend {
+                padding: 10px 20px;
+                background-color: var(--remove);
+                border-radius: 5px;
+                text-align: center;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                p {
+                    color: var(--white);
+                    font-weight: 500;
+                    font-size: 0.8rem;
+                }
+                &:hover {
+                    background-color: rgba(#d63031, 0.8);
+                }
+            }
+            &:hover {
+                background-color: var(--border-light);
+            }
+        }
+    }
+}

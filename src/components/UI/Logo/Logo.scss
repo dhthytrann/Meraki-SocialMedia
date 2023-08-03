@@ -1,0 +1,42 @@
+.navbar-logo {
+    //padding: 20px;
+    //width: 100%;
+    background: var(--white);
+    transition: all 0.3s ease-out 0s;
+    background: transparent;
+    //justify-content: space-between;
+    .logo-img {
+        display: flex;
+        align-items: center;
+        //justify-content: space-between;
+        text-align: center;
+        .img-logo{
+            width: 40px;
+            //height: 40px;
+            img{
+                width: 100%;
+            }
+        }
+
+        .logo-title {
+            margin-left: 10px;
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+            color: var(--title-text);
+            transition: all 0.3s ease-out 0s;
+        }
+    }
+
+    .menu-bt {
+        padding: 0px 15px;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        // i{
+        //     color: var(--title-text);
+        // }
+    }
+}

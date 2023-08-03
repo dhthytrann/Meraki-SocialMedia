@@ -1,0 +1,47 @@
+.top-navbar {
+    padding: 0 30px;
+    min-height: 80px;
+    line-height: 80px;
+    top: 0;
+    left: 0;
+    //right: 0;
+    width: 100%;
+    display: inline-block;
+    background: var(--white);
+    margin: 0;
+    transition: all 0.45s ease 0s;
+    box-shadow: 0px 0px 20px 0px rgba(44, 101, 144, 0.1);
+
+    .navbar-custom {
+        .list-item,
+        .item-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            //justify-content: space-between;
+            width: 100%;
+            .left {
+                display: flex;
+                justify-content: space-between;
+                .search-bar {
+                    width: 100%;
+                }
+            }
+            .right {
+            }
+            // .space-virtual {
+            //     flex-grow: 0.5;
+            // }
+            // .search-bar {
+            //     flex-grow: 1;
+            // }
+            // .top-right-menu {
+            //     flex-grow: 1;
+            // }
+        }
+    }
+}
+
+.w-100pt{
+    width: 100%;
+}

@@ -1,0 +1,118 @@
+.item-user {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--border-light);
+    &:last-child{
+        border-bottom: none;
+    }
+    .sub-card {
+        font-size: inherit;
+        color: inherit;
+        //border-bottom: 1px solid var(--border-light);
+        display: inline-block;
+      
+        .info-user {
+            padding: 0px 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img-avatar {
+                img {
+                    width: 3.3rem;
+                    height: 3.3rem;
+                    line-height: 40px;
+                    font-size: 0.6rem;
+                }
+            }
+            .content {
+                line-height: 20px;
+                text-overflow: ellipsis;
+                display: flex;
+                justify-content: space-between;
+                .req {
+                    flex-grow: 13;
+                }
+                .btn-request {
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    button {
+                        height: 2.2rem;
+                        border-radius: 5px;
+                        border: 0px;
+                        position: relative;
+                        i,
+                        p {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                        }
+                    }
+                    .btn-add,
+                    .btn-remove {
+                        width: 2.2rem;
+                        i{
+                            font-size: 0.86rem;
+                        }
+                    }
+                    .btn-add {
+                        background-color: rgba(#2f65b9, 0.1);
+                        transition: all 0.4s ease;
+                        i {
+                            align-items: center;
+                            font-size: 0.86rem;
+                            font-weight: 600;
+                            color: var(--primary);
+                        }
+                        &:hover {
+                            background-color: var(--primary);
+                            transition: all 0.4 ease;
+                            i {
+                                color: white;
+                            }
+                        }
+                    }
+                    .btn-friended {
+                        width: 5rem;
+                        background-color: rgba(#2f65b9, 0.1);
+                        transition: all 0.4s ease;
+
+                        p {
+                            align-items: center;
+                            font-size: 0.85rem;
+                            font-weight: 600;
+                            color: var(--primary);
+                        }
+                        &:hover {
+                            background-color: var(--primary);
+                            transition: all 0.4 ease;
+                            p {
+                                color: white;
+                            }
+                        }
+                    }
+                    .btn-remove {
+                        background-color: rgba(#d63031, 0.1);
+                        transition: all 0.4s ease;
+                        i {
+                            color: var(--remove);
+                        }
+                        &:hover {
+                            background-color: var(--remove);
+                            transition: all 0.4 ease;
+                            i {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        background-color: rgba(#f1f1f1, 0.5);
+        cursor: pointer;
+    }
+}

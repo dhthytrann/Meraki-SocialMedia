@@ -1,0 +1,150 @@
+.sidebar-scrollbar {
+    position: relative;
+    padding: 0px;
+    position: relative;
+    .logo {
+        width: 100%;
+        min-height: 80px;
+        line-height: 80px;
+        background: var(--white);
+        transition: all 0.3s ease-out 0s;
+        background: transparent;
+        border-bottom: 1px solid var(--border-light);
+        .logo-img {
+            img {
+                height: 40px;
+            }
+        }
+    }
+    .content {
+        max-height: 80vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .profile {
+            padding: 30px 0px 30px 0px;
+            border-bottom: 1px solid var(--border-light);
+            //border-top: 1px solid var(--border-light);
+            .img-avatar {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                    color: none;
+                    &:hover {
+                        color: none;
+                    }
+                }
+                //align-items: center;
+                .name {
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        .menu {
+            //width: 30%;
+            color: inherit;
+            padding: 20px 0px 0px 0px;
+            .title {
+                font-weight: 500;
+                color: inherit;
+                padding: 0px 0px 10px 0px;
+            }
+            nav.sidebar-menu {
+                ul {
+                    padding-left: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    li {
+                        a{
+                            text-decoration: none;
+                        }
+                        margin: 5px 0px;
+                        .btn-navigate {
+                            height: 42px;
+                            border-radius: 5px;
+                            border: 0px;
+                            display: flex;
+                            align-items: center;
+                            background-color: white;
+                            padding: 0px 20px;
+                            transition: all 0.3s ease;
+                            img.icon-sidebar {
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                            span {
+                                margin-left: 10px;
+                                color: var(--body-text);
+                                font-weight: 600;
+                                font-size: 1rem;
+                                transition: all 0.3s ease;
+                            }
+                            &:hover {
+                                background-color: rgba(#f1f1f1, 0.8);
+                                cursor: pointer;
+                                span {
+                                    color: var(--primary);
+                                }
+                                img.icon-sidebar {
+                                    filter: invert(50%) sepia(6%) saturate(4230%) hue-rotate(166deg) brightness(78%)
+                                        contrast(79%);
+                                }
+                            }
+                        }
+                    }
+                    li.active {
+                        .btn-navigate {
+                            background-color: var(--primary);
+                            span {
+                                color: var(--white);
+                            }
+                            img.icon-sidebar {
+                                filter: brightness(0) invert(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ::-webkit-scrollbar-track {
+        //border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        //border-radius: 20px;
+        //background-color: none;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0px;
+        background-color: var(--white);
+        padding: 20px 0px 5px 0px;
+        bottom: 0px;
+
+        p {
+            padding: 20px 0px 0px 0px;
+            border-top: 1px solid var(--border-light);
+            font-size: 0.95rem;
+        }
+    }
+}
